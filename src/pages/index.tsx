@@ -1,7 +1,11 @@
 import Header from '@/components/Header/Header';
+import IconBar from '@/components/IconBar/IconBar';
 import Head from 'next/head';
 
 export default function Home() {
+  const leftIcons = ['light-dark'];
+  const rightIcons = ['velog', 'github'];
+
   return (
     <>
       <Head>
@@ -11,6 +15,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <IconBar direction="left" icons={leftIcons} />
+      <IconBar direction="right" icons={rightIcons} />
     </>
   );
 }
