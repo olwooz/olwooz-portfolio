@@ -17,6 +17,8 @@ export default function Home() {
       </Head>
       <Header />
       <Main />
+      <Main />
+      <Main />
       <IconBar direction="left" icons={leftIcons} />
       <IconBar direction="right" icons={rightIcons} />
     </>
