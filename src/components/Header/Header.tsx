@@ -7,7 +7,7 @@ const Header = () => {
 
   useEffect(() => {
     function handleScroll() {
-      setShow(window.scrollY < scrollY ? true : false);
+      setShow(window.scrollY < scrollY);
       setScrollY(window.scrollY);
     }
 
