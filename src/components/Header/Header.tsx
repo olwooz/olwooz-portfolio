@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed z-10 flex w-full justify-between border-2 border-dashed border-gray-400 px-16 py-8 transition duration-500 ease-in-out ${
+      className={`fixed z-10 flex w-full justify-between border-2 border-dashed border-gray-400 px-16 py-8 backdrop-blur transition duration-500 ease-in-out ${
         show ? '' : 'transparent'
       }`}
     >
