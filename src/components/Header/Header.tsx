@@ -3,7 +3,7 @@ import HeaderButton from './HeaderButton';
 
 const Header = () => {
   const [scrollY, setScrollY] = useState(0);
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
 
   useEffect(() => {
     function handleScroll() {
