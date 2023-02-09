@@ -1,5 +1,6 @@
 import About from '@/components/Contents/About/About';
 import Main from '@/components/Contents/Main/Main';
+import Projects from '@/components/Contents/Projects/Projects';
 import Header from '@/components/Header/Header';
 import IconBar from '@/components/IconBar/IconBar';
 import Head from 'next/head';
@@ -19,7 +20,7 @@ export default function Home() {
       <Header />
       <Main />
       <About />
-      <Main />
+      <Projects />
       <IconBar direction="left" icons={leftIcons} />
       <IconBar direction="right" icons={rightIcons} />
     </>
