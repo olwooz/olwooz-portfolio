@@ -1,8 +1,8 @@
 import ContentWrapper from '../ContentWrapper';
 import AboutText from './AboutText';
 
-const IMG_WIDTH = 432;
-const IMG_HEIGHT = 540;
+const IMG_WIDTH = 'w-[432px]';
+const IMG_HEIGHT = 'h-[540px]';
 const p1 =
   'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nisi nemo eos? Quod reiciendis, commodi unde vel ducimus voluptatem? Dignissimos velit hic, in id placeat perferendis corporis distinctio sunt cum.';
 const p2 =
@@ -16,7 +16,7 @@ const About = () => {
         <AboutText content={p1} />
         <AboutText content={p2} />
       </div>
-      <div className={`mr-[100px] h-[${IMG_HEIGHT}px] min-w-[${IMG_WIDTH}px] border-2 border-dashed border-gray-400`}>Photo</div>
+      <div className={`mr-[100px] ${IMG_HEIGHT} ${IMG_WIDTH} border-2 border-dashed border-gray-400`}>Photo</div>
     </ContentWrapper>
   );
 };
