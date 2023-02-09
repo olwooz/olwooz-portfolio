@@ -1,4 +1,5 @@
 import About from '@/components/Contents/About/About';
+import Contact from '@/components/Contents/Contact/Contact';
 import Main from '@/components/Contents/Main/Main';
 import Projects from '@/components/Contents/Projects/Projects';
 import Header from '@/components/Header/Header';
@@ -21,6 +22,7 @@ export default function Home() {
       <Main />
       <About />
       <Projects />
+      <Contact />
       <IconBar direction="left" icons={leftIcons} />
       <IconBar direction="right" icons={rightIcons} />
     </>
