@@ -1,7 +1,7 @@
 import ContentWrapper from '../ContentWrapper';
 import AboutText from './AboutText';
 
-const IMG_WIDTH = 'w-[432px]';
+const IMG_WIDTH = 'min-w-[432px]';
 const IMG_HEIGHT = 'h-[540px]';
 const p1 =
   'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nisi nemo eos? Quod reiciendis, commodi unde vel ducimus voluptatem? Dignissimos velit hic, in id placeat perferendis corporis distinctio sunt cum.';
