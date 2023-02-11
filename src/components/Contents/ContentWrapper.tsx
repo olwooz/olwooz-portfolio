@@ -4,7 +4,7 @@ interface Props {
 }
 
 const ContentWrapper = ({ children, style }: Props) => {
-  return <div className={`min-h-screen px-[300px] py-[200px] ${style}`}>{children}</div>;
+  return <div className={`min-h-screen px-[200px] py-[200px] ${style}`}>{children}</div>;
 };
 
 export default ContentWrapper;
