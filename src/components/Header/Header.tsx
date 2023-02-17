@@ -26,9 +26,10 @@ const Header = () => {
     >
       <div>LOGO</div>
       <div>
-        <HeaderButton text="menu 1" />
-        <HeaderButton text="menu 2" />
-        <HeaderButton text="menu 3" />
+        <HeaderButton name="main" />
+        <HeaderButton name="about" />
+        <HeaderButton name="projects" />
+        <HeaderButton name="contact" />
       </div>
     </div>
   );

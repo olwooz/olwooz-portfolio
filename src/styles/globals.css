@@ -58,6 +58,7 @@
 
 html {
   font-family: 'AppleSDGothicNeo';
+  scroll-behavior: smooth;
 }
 
 .transparent {

@@ -10,7 +10,7 @@ const p2 =
 
 const About = () => {
   return (
-    <ContentWrapper style="flex justify-between">
+    <ContentWrapper id="about" style="flex justify-between">
       <div className="ml-[100px] mr-[100px]">
         <h1 className="mb-8 text-5xl font-thin">About</h1>
         <AboutText content={p1} />

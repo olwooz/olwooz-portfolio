@@ -3,7 +3,7 @@ import ContactInfo from './ContactInfo';
 
 const Contact = () => {
   return (
-    <ContentWrapper style="flex item-center">
+    <ContentWrapper id="contact" style="flex item-center">
       <div className="m-auto text-center">
         <h1 className="pb-48 text-5xl font-thin">Contact</h1>
         <div className="pb-12">

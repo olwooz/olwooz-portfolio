@@ -4,7 +4,7 @@ import SlotMachine from './SlotMachine';
 
 const Main = () => {
   return (
-    <ContentWrapper style="flex items-center">
+    <ContentWrapper id="main" style="flex items-center">
       <div className="w-full">
         <h3 className="mb-6 text-2xl font-light">안녕하세요.</h3>
         <SlotMachine textData={textData} />

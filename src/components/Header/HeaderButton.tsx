@@ -1,9 +1,15 @@
+import Link from 'next/link';
+
 interface Props {
-  text: string;
+  name: string;
 }
 
-const HeaderButton = ({ text }: Props) => {
-  return <button className="px-4">{text}</button>;
+const HeaderButton = ({ name }: Props) => {
+  return (
+    <a href={`#${name}`}>
+      <button className="px-4 capitalize">{name}</button>
+    </a>
+  );
 };
 
 export default HeaderButton;

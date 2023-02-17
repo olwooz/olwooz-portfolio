@@ -8,7 +8,7 @@ const Projects = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <ContentWrapper style="flex justify-between">
+    <ContentWrapper id="projects" style="flex justify-between">
       <Carousel projects={projectData} activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
       <div className="mr-[100px] max-w-[300px] text-right">
         <h1 className="mb-16 text-5xl font-thin">Projects</h1>
