@@ -1,10 +1,10 @@
-import { EmailIcon } from './email';
-import { GitHubIcon } from './github';
-import { LightDarkIcon } from './light-dark';
-import { PhoneIcon } from './phone';
-import { ShuffleIcon } from './shuffle';
-import { TalkIcon } from './talk';
-import { VelogIcon } from './velog';
+import { EmailIcon } from './EmailIcon';
+import { GitHubIcon } from './GitHubIcon';
+import { LightDarkIcon } from './LightDarkIcon';
+import { PhoneIcon } from './PhoneIcon';
+import { ShuffleIcon } from './ShuffleIcon';
+import { TalkIcon } from './TalkIcon';
+import { VelogIcon } from './VelogIcon';
 import { IconOptions } from './types';
 
 export { EmailIcon, GitHubIcon, LightDarkIcon, PhoneIcon, ShuffleIcon, TalkIcon, VelogIcon };
