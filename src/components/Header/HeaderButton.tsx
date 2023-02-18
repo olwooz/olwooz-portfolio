@@ -6,9 +6,9 @@ interface Props {
 
 const HeaderButton = ({ name }: Props) => {
   return (
-    <a href={`#${name}`}>
+    <Link href={`#${name}`} scroll={false}>
       <button className="px-4 capitalize">{name}</button>
-    </a>
+    </Link>
   );
 };
 
