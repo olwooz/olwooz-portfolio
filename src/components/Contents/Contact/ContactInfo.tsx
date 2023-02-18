@@ -14,7 +14,7 @@ const ContactInfo = ({ info, name, link }: Props) => {
   const InfoElem = (
     <>
       <Icon />
-      <p className="inline-block align-middle text-lg font-bold">{info}</p>
+      <p className="ml-4 inline-block align-middle text-lg font-bold">{info}</p>
     </>
   );
 
