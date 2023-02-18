@@ -1,26 +1,18 @@
-import GitHubIcon from '../Icons/github';
-import LightDarkIcon from '../Icons/light-dark';
-import VelogIcon from '../Icons/velog';
+import { Icons } from '@/components/Icons';
+import { IconNames } from '@/components/Icons/types';
 
 interface Props {
-  name: string;
-}
-
-function getIcon(name: string) {
-  switch (name) {
-    case 'light-dark':
-      return <LightDarkIcon />;
-    case 'github':
-      return <GitHubIcon />;
-    case 'velog':
-      return <VelogIcon />;
-  }
+  name: IconNames;
 }
 
 const IconButton = ({ name }: Props) => {
-  const icon = getIcon(name);
+  const Icon = Icons[name];
 
-  return <button className="mb-2 px-4">{icon}</button>;
+  return (
+    <button className="mb-2 px-4">
+      <Icon />
+    </button>
+  );
 };
 
 export default IconButton;

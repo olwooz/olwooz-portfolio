@@ -1,3 +1,4 @@
+import { IconNames } from '../Icons/types';
 import IconButton from './IconButton';
 import VerticalLine from './VerticalLine';
 
@@ -5,7 +6,7 @@ type Direction = 'left' | 'right';
 
 interface Props {
   direction: Direction;
-  icons: string[];
+  icons: IconNames[];
 }
 
 const IconBar = ({ direction, icons }: Props) => {

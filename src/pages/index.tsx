@@ -4,11 +4,12 @@ import Main from '@/components/Contents/Main/Main';
 import Projects from '@/components/Contents/Projects/Projects';
 import Header from '@/components/Header/Header';
 import IconBar from '@/components/IconBar/IconBar';
+import { IconNames } from '@/components/Icons/types';
 import Head from 'next/head';
 
 export default function Home() {
-  const leftIcons = ['light-dark'];
-  const rightIcons = ['velog', 'github'];
+  const leftIcons: IconNames[] = ['LightDarkIcon'];
+  const rightIcons: IconNames[] = ['VelogIcon', 'GitHubIcon'];
 
   return (
     <>

@@ -1,16 +1,19 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import { Icons } from '@/components/Icons';
+import { IconNames } from '@/components/Icons/types';
 
 interface Props {
   info: string;
-  image: string;
+  name: IconNames;
   link?: string;
 }
 
-const ContactInfo = ({ info, image, link }: Props) => {
+const ContactInfo = ({ info, name, link }: Props) => {
+  const Icon = Icons[name];
+
   const InfoElem = (
     <>
-      <Image src={image} alt={info} width="20" height="20" className="mr-4 inline-block" />
+      <Icon />
       <p className="inline-block align-middle text-lg font-bold">{info}</p>
     </>
   );

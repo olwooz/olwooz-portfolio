@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion, Variants } from 'framer-motion';
-import ShuffleIcon from '@/components/Icons/shuffle';
+import { ShuffleIcon } from '@/components/Icons';
 
 interface Props {
   textData: string[];
@@ -79,7 +79,7 @@ const SlotMachine = ({ textData }: Props) => {
         })}
       </AnimatePresence>
       <motion.button className="mr-[650px]" onClick={handleClick} whileTap={{ scale: 0.9, scaleY: 1 }} whileHover={{ scaleY: -1 }}>
-        <ShuffleIcon fill={BUTTON_COLOR} />
+        <ShuffleIcon />
       </motion.button>
     </div>
   );
