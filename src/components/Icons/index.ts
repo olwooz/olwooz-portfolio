@@ -9,12 +9,4 @@ import { IconOptions } from './types';
 
 export { EmailIcon, GitHubIcon, LightDarkIcon, PhoneIcon, ShuffleIcon, TalkIcon, VelogIcon };
 
-export const Icons: IconOptions = {
-  EmailIcon: EmailIcon,
-  GitHubIcon: GitHubIcon,
-  LightDarkIcon: LightDarkIcon,
-  PhoneIcon: PhoneIcon,
-  ShuffleIcon: ShuffleIcon,
-  TalkIcon: TalkIcon,
-  VelogIcon: VelogIcon,
-};
+export const Icons: IconOptions = { EmailIcon, GitHubIcon, LightDarkIcon, PhoneIcon, ShuffleIcon, TalkIcon, VelogIcon };
