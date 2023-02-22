@@ -21,7 +21,7 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
 export default function Home() {
   const { darkMode } = useStore();
 
-  const leftIcons: IconNames[] = ['LightDarkIcon'];
+  const leftIcons: IconNames[] = ['LanguageIcon', 'LightDarkIcon'];
   const rightIcons: IconNames[] = ['VelogIcon', 'GitHubIcon'];
 
   return (
