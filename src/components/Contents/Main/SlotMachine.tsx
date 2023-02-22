@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion, Variants } from 'framer-motion';
 import { ShuffleIcon } from '@/components/Icons';
+import { useTranslation } from 'next-i18next';
 
 interface Props {
   textData: string[];
@@ -17,6 +18,8 @@ const BUTTON_COLOR = 'rgb(75, 85, 99)';
 const ARRAY_REPEAT = 5;
 
 const SlotMachine = ({ textData }: Props) => {
+  const { t } = useTranslation('common');
+
   const [count, setCount] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const textArr = Array(ARRAY_REPEAT).fill(textData).flat();
@@ -72,7 +75,7 @@ const SlotMachine = ({ textData }: Props) => {
                 exit="exit"
                 transition={{ duration: getDuration(isLast ? 0.1 : 0.01, i), ease: isLast ? 'easeInOut' : 'linear' }}
               >
-                {text}
+                {t(`main.textData.${text}`)}
               </motion.p>
             )
           );

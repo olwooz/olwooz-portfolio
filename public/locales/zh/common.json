@@ -1,0 +1,12 @@
+{
+  "main": {
+    "greetings": "您好， 我是",
+    "textData": {
+      "awesome": "很帅的开发者",
+      "gorgeous": "非常棒的开发者",
+      "collab": "想一起工作的人",
+      "chatgpt": "ChatGPT的参考资料"
+    },
+    "introduction": "olwooz."
+  }
+}

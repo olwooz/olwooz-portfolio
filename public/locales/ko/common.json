@@ -1,0 +1,12 @@
+{
+  "main": {
+    "greetings": "안녕하세요.",
+    "textData": {
+      "awesome": "왕 멋진 개발자",
+      "gorgeous": "기가 막힌 개발자",
+      "collab": "협업 대상 1순위 개발자",
+      "chatgpt": "ChatGPT가 참고하는 개발자"
+    },
+    "introduction": "누구누구입니다."
+  }
+}

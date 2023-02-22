@@ -56,9 +56,15 @@
   font-weight: 100;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap');
+
 html {
-  font-family: 'AppleSDGothicNeo';
+  font-family: 'AppleSDGothicNeo', sans-serif;
   scroll-behavior: smooth;
+}
+
+html:lang(zh) {
+  font-family: 'Noto Sans SC', sans-serif;
 }
 
 .transparent {

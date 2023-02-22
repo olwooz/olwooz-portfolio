@@ -7,6 +7,16 @@ import IconBar from '@/components/IconBar/IconBar';
 import { IconNames } from '@/components/Icons/types';
 import Head from 'next/head';
 import useStore from '@/hooks/useStore';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { GetStaticPropsContext } from 'next';
+
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? 'en', ['common'])),
+    },
+  };
+}
 
 export default function Home() {
   const { darkMode } = useStore();

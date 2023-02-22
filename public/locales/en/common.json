@@ -1,0 +1,12 @@
+{
+  "main": {
+    "greetings": "Hi. I'm",
+    "textData": {
+      "awesome": "an awesome developer",
+      "gorgeous": "a gorgeous developer",
+      "collab": "a highly valued collaborator",
+      "chatgpt": "ChatGPT's reference"
+    },
+    "introduction": "olwooz."
+  }
+}
