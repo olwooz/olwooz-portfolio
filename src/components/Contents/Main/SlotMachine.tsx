@@ -66,7 +66,7 @@ const SlotMachine = ({ textData }: Props) => {
           return (
             i === currentIndex && (
               <motion.p
-                className="cursor-pointer overflow-hidden text-7xl font-thin"
+                className="cursor-pointer overflow-hidden font-thin sm:text-4xl lg:text-7xl"
                 key={text}
                 custom={{ isLast }}
                 variants={variants}
@@ -84,7 +84,12 @@ const SlotMachine = ({ textData }: Props) => {
           );
         })}
       </AnimatePresence>
-      <motion.button className="absolute left-[160px] top-[49vh]" onClick={handleClick} whileTap={{ scale: 0.9, scaleY: 1 }} whileHover={{ scaleY: -1 }}>
+      <motion.button
+        className="absolute top-[49vh] left-[10px] sm:left-[60px] xl:left-[160px]"
+        onClick={handleClick}
+        whileTap={{ scale: 0.9, scaleY: 1 }}
+        whileHover={{ scaleY: -1 }}
+      >
         <ShuffleIcon />
       </motion.button>
     </div>
