@@ -4,8 +4,8 @@ export const ShuffleIcon = () => {
       version="1.1"
       id="Capa_1"
       xmlns="http://www.w3.org/2000/svg"
-      width="32"
-      height="32"
+      width="24"
+      height="24"
       viewBox="0 0 95.524 95.524"
       className="fill-slate-600 dark:fill-slate-500"
     >

@@ -58,7 +58,7 @@ const SlotMachine = ({ textData }: Props) => {
   }
 
   return (
-    <div className="flex justify-between">
+    <div>
       <AnimatePresence mode="popLayout">
         {textArr.map((text, i) => {
           const isLast = i === lastIndex;
@@ -66,7 +66,7 @@ const SlotMachine = ({ textData }: Props) => {
           return (
             i === currentIndex && (
               <motion.p
-                className="overflow-hidden text-7xl font-thin"
+                className="cursor-pointer overflow-hidden text-7xl font-thin"
                 key={text}
                 custom={{ isLast }}
                 variants={variants}
@@ -74,6 +74,9 @@ const SlotMachine = ({ textData }: Props) => {
                 animate="animate"
                 exit="exit"
                 transition={{ duration: getDuration(isLast ? 0.1 : 0.01, i), ease: isLast ? 'easeInOut' : 'linear' }}
+                onClick={handleClick}
+                whileHover={{ opacity: 0.5, transition: { duration: 0.2 } }}
+                whileTap={{ scaleY: 0.7, y: '-30%', transition: { duration: 0.2 } }}
               >
                 {t(`main.textData.${text}`)}
               </motion.p>
@@ -81,7 +84,7 @@ const SlotMachine = ({ textData }: Props) => {
           );
         })}
       </AnimatePresence>
-      <motion.button className="mr-[650px]" onClick={handleClick} whileTap={{ scale: 0.9, scaleY: 1 }} whileHover={{ scaleY: -1 }}>
+      <motion.button className="absolute left-[160px] top-[49vh]" onClick={handleClick} whileTap={{ scale: 0.9, scaleY: 1 }} whileHover={{ scaleY: -1 }}>
         <ShuffleIcon />
       </motion.button>
     </div>
