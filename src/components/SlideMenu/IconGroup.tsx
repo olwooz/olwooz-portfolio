@@ -7,7 +7,7 @@ const IconGroup = () => {
   return (
     <div className="pb-4">
       {icons.map((icon) => (
-        <IconButton key={icon} name={icon} style={'p-4'} />
+        <IconButton key={icon} name={icon} style={'p-8'} />
       ))}
     </div>
   );

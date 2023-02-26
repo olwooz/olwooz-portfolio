@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import ButtonGroup from '../Buttons/ButtonGroup';
+import SectionButtons from '../Buttons/SectionButtons';
 import SlideMenuButton from '@/components/SlideMenu/SlideMenuButton';
 import SlideMenu from '../SlideMenu/SlideMenu';
 import { HamburgerIcon } from '../Icons';
@@ -30,7 +30,7 @@ const Header = () => {
       >
         <div>LOGO</div>
         <div className="hidden sm:block">
-          <ButtonGroup />
+          <SectionButtons wrapperStyle="inline-block" buttonStyle="px-4" />
         </div>
         <div className="sm:hidden">
           <SlideMenuButton>

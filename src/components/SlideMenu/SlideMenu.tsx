@@ -3,8 +3,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useStoreSlideMenu } from '@/hooks/useStore';
 import { RightArrowIcon } from '@/components/Icons';
 import IconGroup from './IconGroup';
-import MenuButton from './MenuButton';
 import SlideMenuButton from './SlideMenuButton';
+import SectionButtons from '../Buttons/SectionButtons';
 
 const SlideMenu = () => {
   const { isOpen, toggleOpen } = useStoreSlideMenu();
@@ -39,10 +39,7 @@ const SlideMenu = () => {
               <RightArrowIcon />
             </SlideMenuButton>
           </div>
-          <MenuButton name="main" />
-          <MenuButton name="about" />
-          <MenuButton name="projects" />
-          <MenuButton name="contact" />
+          <SectionButtons wrapperStyle="block" buttonStyle="py-16 text-2xl" onClick={toggleOpen} />
           <IconGroup />
         </motion.div>
       )}
