@@ -1,14 +1,8 @@
-export const ShuffleIcon = () => {
+import { IconProps } from './types';
+
+export const ShuffleIcon = ({ size, style }: IconProps) => {
   return (
-    <svg
-      version="1.1"
-      id="Capa_1"
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 95.524 95.524"
-      className="fill-slate-600 dark:fill-slate-500"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" width={size ?? 24} viewBox="0 0 95.524 95.524" className="fill-slate-600 dark:fill-slate-500">
       <g>
         <g>
           <path

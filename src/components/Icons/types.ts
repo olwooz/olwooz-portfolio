@@ -13,3 +13,10 @@ export type IconNames =
 export type IconOptions = {
   [K in IconNames]: React.ComponentType;
 };
+
+export interface IconProps {
+  size?: number;
+  style?: string;
+}
+
+export type IconComponent = ({ size, style }: IconProps) => JSX.Element;

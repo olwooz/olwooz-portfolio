@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Icons } from '@/components/Icons';
-import { IconNames } from '@/components/Icons/types';
+import { IconNames, IconProps } from '@/components/Icons/types';
+import { ComponentType } from 'react';
 
 interface Props {
   info: string;
@@ -8,12 +9,14 @@ interface Props {
   link?: string;
 }
 
+const iconStyle = 'transition-color inline-block dark:fill-slate-300 dark:hover:fill-slate-100';
+
 const ContactInfo = ({ info, name, link }: Props) => {
-  const Icon = Icons[name];
+  const Icon: ComponentType<IconProps> = Icons[name];
 
   const InfoElem = (
     <>
-      <Icon />
+      <Icon style={iconStyle} />
       <p className="ml-4 inline-block align-middle text-lg font-bold">{info}</p>
     </>
   );

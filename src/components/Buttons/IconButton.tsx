@@ -1,17 +1,20 @@
 import { Icons } from '@/components/Icons';
-import { IconNames } from '@/components/Icons/types';
+import { IconNames, IconProps } from '@/components/Icons/types';
+import useButtonActions from '@/hooks/useButtonActions';
+import { ComponentType } from 'react';
 
-interface Props {
+interface Props extends IconProps {
   name: IconNames;
-  style: string;
+  buttonStyle?: string;
 }
 
-const IconButton = ({ name, style }: Props) => {
-  const Icon = Icons[name];
+const IconButton = ({ name, buttonStyle, size, style }: Props) => {
+  const buttonActions = useButtonActions();
+  const Icon: ComponentType<IconProps> = Icons[name];
 
   return (
-    <button className={style}>
-      <Icon />
+    <button className={buttonStyle} onClick={buttonActions[name]}>
+      <Icon size={size} style={style} />
     </button>
   );
 };
