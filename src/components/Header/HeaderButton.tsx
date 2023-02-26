@@ -1,3 +1,4 @@
+import { useStoreSlideMenu } from '@/hooks/useStore';
 import Link from 'next/link';
 
 interface Props {
@@ -5,10 +6,14 @@ interface Props {
 }
 
 const HeaderButton = ({ name }: Props) => {
+  const { isOpen, toggleOpen } = useStoreSlideMenu();
+
   return (
-    <Link href={`#${name}`} scroll={false}>
-      <button className="px-4 capitalize">{name}</button>
-    </Link>
+    <div className={isOpen ? 'block' : 'inline-block'}>
+      <Link href={`#${name}`} scroll={false} onClick={isOpen ? toggleOpen : undefined}>
+        <button className={`${isOpen ? 'py-16 text-2xl' : 'px-4'} capitalize`}>{name}</button>
+      </Link>
+    </div>
   );
 };
 

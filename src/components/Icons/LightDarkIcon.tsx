@@ -1,7 +1,7 @@
-import useStore from '@/hooks/useStore';
+import { useStoreDarkMode } from '@/hooks/useStore';
 
 export const LightDarkIcon = () => {
-  const { toggleDarkMode } = useStore();
+  const { toggleDarkMode } = useStoreDarkMode();
 
   return (
     <svg

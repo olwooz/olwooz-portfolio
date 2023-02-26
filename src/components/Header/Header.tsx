@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react';
-import HeaderButton from './HeaderButton';
+import ButtonGroup from '../Buttons/ButtonGroup';
+import SlideMenuButton from '@/components/SlideMenu/SlideMenuButton';
+import SlideMenu from '../SlideMenu/SlideMenu';
+import { HamburgerIcon } from '../Icons';
 
 const Header = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -19,19 +22,24 @@ const Header = () => {
   }, [scrollY]);
 
   return (
-    <div
-      className={`fixed z-10 flex w-full justify-between border-2 border-dashed border-gray-400 px-16 py-8 backdrop-blur transition duration-500 ease-in-out dark:bg-slate-800 dark:text-slate-200 ${
-        show ? '' : 'transparent'
-      }`}
-    >
-      <div>LOGO</div>
-      <div>
-        <HeaderButton name="main" />
-        <HeaderButton name="about" />
-        <HeaderButton name="projects" />
-        <HeaderButton name="contact" />
+    <>
+      <div
+        className={`fixed z-10 flex w-full justify-between px-16 py-8 shadow-lg backdrop-blur transition duration-500 ease-in-out dark:text-slate-200 ${
+          show ? '' : 'transparent'
+        }`}
+      >
+        <div>LOGO</div>
+        <div className="hidden sm:block">
+          <ButtonGroup />
+        </div>
+        <div className="sm:hidden">
+          <SlideMenuButton>
+            <HamburgerIcon />
+          </SlideMenuButton>
+        </div>
+        <SlideMenu />
       </div>
-    </div>
+    </>
   );
 };
 

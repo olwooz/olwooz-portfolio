@@ -3,13 +3,14 @@ import { IconNames } from '@/components/Icons/types';
 
 interface Props {
   name: IconNames;
+  style: string;
 }
 
-const IconButton = ({ name }: Props) => {
+const IconButton = ({ name, style }: Props) => {
   const Icon = Icons[name];
 
   return (
-    <button className="mb-2 px-4">
+    <button className={style}>
       <Icon />
     </button>
   );

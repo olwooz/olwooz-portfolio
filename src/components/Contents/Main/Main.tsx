@@ -11,7 +11,7 @@ const Main = () => {
       <div id="mobile" className="w-full sm:hidden">
         <h1 className="mb-6 text-base font-light">{t('main.greetings')}</h1>
         {textData.map((text) => (
-          <h1 key="text" className="text-2xl font-thin">
+          <h1 key={text} className="text-2xl font-thin">
             {t(`main.textData.${text}`)}
           </h1>
         ))}

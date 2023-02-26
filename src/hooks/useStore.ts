@@ -1,13 +1,23 @@
 import { create } from 'zustand';
 
-interface ToggleState {
+interface DarkModeState {
   darkMode: boolean;
   toggleDarkMode: () => void;
 }
 
-const useStore = create<ToggleState>((set) => ({
+interface SlideMenuState {
+  isOpen: boolean;
+  toggleOpen: () => void;
+}
+
+const useStoreDarkMode = create<DarkModeState>((set) => ({
   darkMode: true,
   toggleDarkMode: () => set((state) => ({ darkMode: !state.darkMode })),
 }));
 
-export default useStore;
+const useStoreSlideMenu = create<SlideMenuState>((set) => ({
+  isOpen: false,
+  toggleOpen: () => set((state) => ({ isOpen: !state.isOpen })),
+}));
+
+export { useStoreDarkMode, useStoreSlideMenu };
