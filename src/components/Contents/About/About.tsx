@@ -1,8 +1,9 @@
 import ContentWrapper from '../ContentWrapper';
 import AboutText from './AboutText';
 
-const IMG_WIDTH = 'min-w-[432px]';
-const IMG_HEIGHT = 'h-[540px]';
+const IMG_WIDTH = 'w-[216px] sm:w-[324px] 2xl:min-w-[432px]';
+const IMG_HEIGHT = 'h-[270px] sm:h-[405px] 2xl:h-[540px]';
+
 const p1 =
   'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nisi nemo eos? Quod reiciendis, commodi unde vel ducimus voluptatem? Dignissimos velit hic, in id placeat perferendis corporis distinctio sunt cum.';
 const p2 =
@@ -10,13 +11,13 @@ const p2 =
 
 const About = () => {
   return (
-    <ContentWrapper id="about" style="flex justify-between">
-      <div className="ml-[100px] mr-[100px]">
+    <ContentWrapper id="about" style="2xl:flex 2xl:justify-between">
+      <div className="2xl:ml-[100px] 2xl:mr-[100px]">
         <h1 className="mb-8 text-5xl font-thin">About</h1>
         <AboutText content={p1} />
         <AboutText content={p2} />
       </div>
-      <div className={`mr-[100px] ${IMG_HEIGHT} ${IMG_WIDTH} border-2 border-dashed border-gray-400`}>Photo</div>
+      <div className={`mx-auto 2xl:mr-[100px] ${IMG_HEIGHT} ${IMG_WIDTH} border-2 border-dashed border-gray-400`}>Photo</div>
     </ContentWrapper>
   );
 };
