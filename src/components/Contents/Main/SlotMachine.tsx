@@ -14,26 +14,32 @@ interface VariantProps {
   filter?: string;
 }
 
-const BUTTON_COLOR = 'rgb(75, 85, 99)';
-const ARRAY_REPEAT = 5;
+const MIN_ARR_LEN = 15;
 
 const SlotMachine = ({ textData }: Props) => {
   const { t } = useTranslation('common');
 
-  const [count, setCount] = useState(0);
+  const dataCount = textData.length < MIN_ARR_LEN ? Math.round(MIN_ARR_LEN / textData.length) * textData.length : textData.length;
+  const textArr =
+    textData.length < MIN_ARR_LEN
+      ? Array(Math.round(MIN_ARR_LEN / textData.length))
+          .fill(textData)
+          .flat()
+      : textData;
+
+  const [data, setData] = useState(textArr);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const textArr = Array(ARRAY_REPEAT).fill(textData).flat();
-  const lastIndex = textArr.length - 1 - count;
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => {
-        return prev < lastIndex ? prev + 1 : prev;
+        return prev < selectedIndex ? prev + 1 : prev;
       });
     }, getDuration(10, currentIndex));
 
     return () => clearInterval(interval);
-  }, [currentIndex, lastIndex, count]);
+  }, [currentIndex, selectedIndex]);
 
   const variants: Variants = {
     initial: { scaleY: 0.3, y: '-50%', opacity: 0 },
@@ -47,21 +53,22 @@ const SlotMachine = ({ textData }: Props) => {
   };
 
   function handleClick() {
+    const prevIndex = currentIndex;
+    const nextIndex = textArr.length - 1;
+    setData([...data.slice(prevIndex), ...textArr]);
     setCurrentIndex(0);
-    setCount((prev) => {
-      return prev < textData.length - 1 ? prev + 1 : 0;
-    });
+    setSelectedIndex(nextIndex);
   }
 
   function getDuration(base: number, index: number) {
-    return base * (index + 1) * 0.5;
+    return base * (index + 1) * (5 / dataCount);
   }
 
   return (
     <div>
       <AnimatePresence mode="popLayout">
         {textArr.map((text, i) => {
-          const isLast = i === lastIndex;
+          const isLast = i === selectedIndex;
 
           return (
             i === currentIndex && (
