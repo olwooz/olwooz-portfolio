@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { AnimatePresence, motion, Variants } from 'framer-motion';
 import { ShuffleIcon } from '@/components/Icons';
 import { useTranslation } from 'next-i18next';
@@ -29,17 +29,17 @@ const SlotMachine = ({ textData }: Props) => {
 
   const [data, setData] = useState(textArr);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  const lastIndex = dataCount - 1;
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => {
-        return prev < selectedIndex ? prev + 1 : prev;
+        return prev < lastIndex ? prev + 1 : prev;
       });
     }, getDuration(10, currentIndex));
 
     return () => clearInterval(interval);
-  }, [currentIndex, selectedIndex]);
+  });
 
   const variants: Variants = {
     initial: { scaleY: 0.3, y: '-50%', opacity: 0 },
@@ -53,22 +53,22 @@ const SlotMachine = ({ textData }: Props) => {
   };
 
   function handleClick() {
-    const prevIndex = currentIndex;
-    const nextIndex = textArr.length - 1;
-    setData([...data.slice(prevIndex), ...textArr]);
+    setData((prev) => [prev[lastIndex], ...prev.slice(0, lastIndex)]);
     setCurrentIndex(0);
-    setSelectedIndex(nextIndex);
   }
 
-  function getDuration(base: number, index: number) {
-    return base * (index + 1) * (5 / dataCount);
-  }
+  const getDuration = useCallback(
+    (base: number, index: number) => {
+      return base * (index + 1) * (MIN_ARR_LEN / dataCount);
+    },
+    [dataCount],
+  );
 
   return (
     <div>
       <AnimatePresence mode="popLayout">
-        {textArr.map((text, i) => {
-          const isLast = i === selectedIndex;
+        {data.map((text, i) => {
+          const isLast = i === lastIndex;
 
           return (
             i === currentIndex && (
@@ -80,7 +80,7 @@ const SlotMachine = ({ textData }: Props) => {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                transition={{ duration: getDuration(isLast ? 0.1 : 0.01, i), ease: isLast ? 'easeInOut' : 'linear' }}
+                transition={{ duration: getDuration(isLast ? 0.06 : 0.01, i), ease: isLast ? 'easeInOut' : 'linear' }}
                 onClick={handleClick}
                 whileHover={{ opacity: 0.5, transition: { duration: 0.2 } }}
                 whileTap={{ scaleY: 0.7, y: '-30%', transition: { duration: 0.2 } }}
