@@ -13,7 +13,6 @@ const Projects = () => {
         <div className="text-right">
           <h1 className="mb-16 text-5xl font-thin">Projects</h1>
           <Carousel projects={projectData} activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
-
           <ProjectText projects={projectData} activeIndex={activeIndex} />
         </div>
       </ContentWrapper>

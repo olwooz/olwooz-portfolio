@@ -17,11 +17,11 @@ const ContactInfo = ({ info, name, link }: Props) => {
   const InfoElem = (
     <>
       <Icon style={iconStyle} />
-      <p className="ml-4 inline-block align-middle text-lg font-bold">{info}</p>
+      <span className="ml-4 align-middle text-lg font-bold">{info}</span>
     </>
   );
 
-  return <div className="inline-block w-[18vw] p-12 text-center">{link ? <Link href={link}>{InfoElem}</Link> : InfoElem}</div>;
+  return <div className="p-12">{link ? <Link href={link}>{InfoElem}</Link> : InfoElem}</div>;
 };
 
 export default ContactInfo;
