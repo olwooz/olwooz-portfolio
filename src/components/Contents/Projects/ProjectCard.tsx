@@ -15,9 +15,9 @@ const ProjectCard = (props: Props) => {
 
   const WithLink = () => {
     return (
-      <Link href={url}>
+      <a target="_blank" rel="noreferrer" href={url}>
         <Image src={previewImage} alt={title} width="800" height="450" />
-      </Link>
+      </a>
     );
   };
 

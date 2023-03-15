@@ -13,7 +13,7 @@ const PageButton = (props: Props) => {
     <motion.button
       whileTap={{ scale: 0.9 }}
       onClick={() => handleClick(direction)}
-      className="m-2 h-12 w-12 rounded-lg border-transparent bg-gray-400 p-2 text-xl font-black text-white opacity-80"
+      className="m-2 h-12 w-12 rounded-lg border-none p-2 text-xl font-black text-white opacity-80 hover:bg-gray-400 hover:bg-opacity-20"
     >
       {text}
     </motion.button>
