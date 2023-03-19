@@ -1,7 +1,7 @@
-import ContentWrapper from '../ContentWrapper';
-import { textKeys } from './data';
-import SlotMachine from './SlotMachine';
 import { useTranslation } from 'next-i18next';
+import ContentWrapper from '@components/Contents/ContentWrapper';
+import { textKeys } from '@Main/data';
+import SlotMachine from '@Main/SlotMachine';
 
 const Main = () => {
   const { t } = useTranslation('common');

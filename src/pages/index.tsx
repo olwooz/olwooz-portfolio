@@ -1,15 +1,15 @@
-import About from '@/components/Contents/About/About';
-import Contact from '@/components/Contents/Contact/Contact';
-import Main from '@/components/Contents/Main/Main';
-import Projects from '@/components/Contents/Projects/Projects';
-import Header from '@/components/Header/Header';
-import IconBar from '@/components/IconBar/IconBar';
-import { IconNames } from '@/components/Icons/types';
-import Head from 'next/head';
-import { useStoreSlideMenu, useStoreDarkMode } from '@/hooks/useStore';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { GetStaticPropsContext } from 'next';
 import { useEffect } from 'react';
+import { GetStaticPropsContext } from 'next';
+import Head from 'next/head';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import About from '@About/About';
+import Contact from '@Contact/Contact';
+import Main from '@Main/Main';
+import Projects from '@Projects/Projects';
+import Header from '@components/Header/Header';
+import IconBar from '@components/IconBar/IconBar';
+import { IconNames } from '@components/Icons/types';
+import { useStoreSlideMenu, useStoreDarkMode } from '@hooks/useStore';
 
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
   return {

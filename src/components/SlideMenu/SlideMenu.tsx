@@ -1,9 +1,9 @@
 import { useEffect, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useStoreSlideMenu } from '@/hooks/useStore';
-import IconGroup from './IconGroup';
-import SectionButtons from '../Buttons/SectionButtons';
-import IconButton from '../Buttons/IconButton';
+import { useStoreSlideMenu } from '@hooks/useStore';
+import IconGroup from '@components/SlideMenu/IconGroup';
+import SectionButtons from '@components/Buttons/SectionButtons';
+import IconButton from '@components/Buttons/IconButton';
 import { iconStyle } from '@/constants/styles';
 
 const SlideMenu = () => {

@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import ContentWrapper from '../ContentWrapper';
-import Carousel from './Carousel';
-import ProjectText from './ProjectText';
-import { projectData } from './data';
+import ContentWrapper from '@components/Contents/ContentWrapper';
+import Carousel from '@Projects/Carousel';
+import ProjectText from '@Projects/ProjectText';
+import { projectData } from '@Projects/data';
 
 const Projects = () => {
   const [activeIndex, setActiveIndex] = useState(0);

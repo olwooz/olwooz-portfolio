@@ -1,6 +1,6 @@
-import { LanguageButton } from '@/components/Buttons/LanguageButton';
-import useLanguage from '@/hooks/useLanguage';
-import { IconProps } from './types';
+import { LanguageButton } from '@components/Buttons/LanguageButton';
+import useLanguage from '@hooks/useLanguage';
+import { IconProps } from '@components/Icons/types';
 
 export const LanguageIcon = ({ size }: IconProps) => {
   const { currentLanguage, languageList } = useLanguage();

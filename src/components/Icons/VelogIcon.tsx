@@ -1,4 +1,4 @@
-import { IconProps } from './types';
+import { IconProps } from '@components/Icons/types';
 
 export const VelogIcon = ({ size, style }: IconProps) => {
   return (

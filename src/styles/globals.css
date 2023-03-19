@@ -4,63 +4,63 @@
 
 @font-face {
   font-family: 'AppleSDGothicNeo';
-  src: url(../fonts/AppleSDGothicNeo/AppleSDGothicNeoH.ttf);
+  src: url(../assets/fonts/AppleSDGothicNeoH.ttf);
   font-weight: 900;
   unicode-range: U+0000-024F, U+AC00-D7AF;
 }
 
 @font-face {
   font-family: 'AppleSDGothicNeo';
-  src: url(../fonts/AppleSDGothicNeo/AppleSDGothicNeoEB.ttf);
+  src: url(../assets/fonts/AppleSDGothicNeoEB.ttf);
   font-weight: 800;
   unicode-range: U+0000-024F, U+AC00-D7AF;
 }
 
 @font-face {
   font-family: 'AppleSDGothicNeo';
-  src: url(../fonts/AppleSDGothicNeo/AppleSDGothicNeoB.ttf);
+  src: url(../assets/fonts/AppleSDGothicNeoB.ttf);
   font-weight: 700;
   unicode-range: U+0000-024F, U+AC00-D7AF;
 }
 
 @font-face {
   font-family: 'AppleSDGothicNeo';
-  src: url(../fonts/AppleSDGothicNeo/AppleSDGothicNeoSB.ttf);
+  src: url(../assets/fonts/AppleSDGothicNeoSB.ttf);
   font-weight: 600;
   unicode-range: U+0000-024F, U+AC00-D7AF;
 }
 
 @font-face {
   font-family: 'AppleSDGothicNeo';
-  src: url(../fonts/AppleSDGothicNeo/AppleSDGothicNeoM.ttf);
+  src: url(../assets/fonts/AppleSDGothicNeoM.ttf);
   font-weight: 500;
   unicode-range: U+0000-024F, U+AC00-D7AF;
 }
 
 @font-face {
   font-family: 'AppleSDGothicNeo';
-  src: url(../fonts/AppleSDGothicNeo/AppleSDGothicNeoR.ttf);
+  src: url(../assets/fonts/AppleSDGothicNeoR.ttf);
   font-weight: 400;
   unicode-range: U+0000-024F, U+AC00-D7AF;
 }
 
 @font-face {
   font-family: 'AppleSDGothicNeo';
-  src: url(../fonts/AppleSDGothicNeo/AppleSDGothicNeoL.ttf);
+  src: url(../assets/fonts/AppleSDGothicNeoL.ttf);
   font-weight: 300;
   unicode-range: U+0000-024F, U+AC00-D7AF;
 }
 
 @font-face {
   font-family: 'AppleSDGothicNeo';
-  src: url(../fonts/AppleSDGothicNeo/AppleSDGothicNeoUL.ttf);
+  src: url(../assets/fonts/AppleSDGothicNeoUL.ttf);
   font-weight: 200;
   unicode-range: U+0000-024F, U+AC00-D7AF;
 }
 
 @font-face {
   font-family: 'AppleSDGothicNeo';
-  src: url(../fonts/AppleSDGothicNeo/AppleSDGothicNeoT.ttf);
+  src: url(../assets/fonts/AppleSDGothicNeoT.ttf);
   font-weight: 100;
   unicode-range: U+0000-024F, U+AC00-D7AF;
 }

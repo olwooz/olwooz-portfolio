@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import SectionButtons from '../Buttons/SectionButtons';
-import SlideMenu from '../SlideMenu/SlideMenu';
-import IconButton from '../Buttons/IconButton';
-import { iconStyle } from '@/constants/styles';
+import SectionButtons from '@components/Buttons/SectionButtons';
+import SlideMenu from '@components/SlideMenu/SlideMenu';
+import IconButton from '@components/Buttons/IconButton';
+import { iconStyle } from '@constants/styles';
 
 const Header = () => {
   const [scrollY, setScrollY] = useState(0);

@@ -1,8 +1,8 @@
-import { AnimatePresence, motion, Variants } from 'framer-motion';
 import { useState } from 'react';
-import PageButton from './PageButton';
-import ProjectCard from './ProjectCard';
-import { Project } from './types';
+import { AnimatePresence, motion, Variants } from 'framer-motion';
+import PageButton from '@Projects/PageButton';
+import ProjectCard from '@Projects/ProjectCard';
+import { Project } from '@Projects/types';
 
 interface Props {
   projects: Project[];

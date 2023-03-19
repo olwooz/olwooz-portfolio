@@ -1,6 +1,6 @@
-import { IconNames } from '../Icons/types';
-import IconButton from '../Buttons/IconButton';
-import VerticalLine from './VerticalLine';
+import { IconNames } from '@components/Icons/types';
+import IconButton from '@components/Buttons/IconButton';
+import VerticalLine from '@components/IconBar/VerticalLine';
 import { iconStyle } from '@/constants/styles';
 
 type Direction = 'left' | 'right';

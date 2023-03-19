@@ -1,6 +1,6 @@
-import { IconNames } from '@/components/Icons/types';
-import useLanguage from './useLanguage';
-import { useStoreDarkMode, useStoreSlideMenu } from './useStore';
+import { IconNames } from '@components/Icons/types';
+import useLanguage from '@hooks/useLanguage';
+import { useStoreDarkMode, useStoreSlideMenu } from '@hooks/useStore';
 
 type ButtonActions = {
   [key in IconNames]?: (...args: any) => any;

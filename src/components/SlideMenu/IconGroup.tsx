@@ -1,6 +1,6 @@
-import { IconNames } from '@/components/Icons/types';
-import IconButton from '@/components/Buttons/IconButton';
-import { iconStyle } from '@/constants/styles';
+import { IconNames } from '@components/Icons/types';
+import IconButton from '@components/Buttons/IconButton';
+import { iconStyle } from '@constants/styles';
 
 const icons: IconNames[] = ['VelogIcon', 'GitHubIcon', 'LightDarkIcon', 'LanguageIcon'];
 

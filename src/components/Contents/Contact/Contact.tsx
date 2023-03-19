@@ -1,6 +1,6 @@
-import ContentWrapper from '../ContentWrapper';
-import ContactInfo from './ContactInfo';
-import { EMAIL, PHONE } from './data';
+import ContentWrapper from '@components/Contents/ContentWrapper';
+import ContactInfo from '@Contact/ContactInfo';
+import { EMAIL, PHONE } from '@Contact/data';
 
 const Contact = () => {
   return (

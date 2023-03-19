@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import { Icons } from '@/components/Icons';
-import { IconNames, IconProps } from '@/components/Icons/types';
 import { ComponentType } from 'react';
+import Link from 'next/link';
+import { Icons } from '@components/Icons';
+import { IconNames, IconProps } from '@components/Icons/types';
 
 interface Props {
   info: string;

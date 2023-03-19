@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Project } from './types';
+import { motion } from 'framer-motion';
+import { Project } from '@Projects/types';
 
 interface Props {
   project: Project;

@@ -1,7 +1,7 @@
-import { ABOUT_IMG_HEIGHT, ABOUT_IMG_WIDTH } from '@/constants/styles';
-import { ABOUT_P } from './data';
-import ContentWrapper from '../ContentWrapper';
-import AboutText from './AboutText';
+import ContentWrapper from '@components/Contents/ContentWrapper';
+import { ABOUT_IMG_HEIGHT, ABOUT_IMG_WIDTH } from '@constants/styles';
+import AboutText from '@About/AboutText';
+import { ABOUT_P } from '@About/data';
 
 const About = () => {
   return (
