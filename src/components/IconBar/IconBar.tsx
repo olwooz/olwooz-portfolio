@@ -1,7 +1,7 @@
 import { IconNames } from '@Icons/types';
 import { IconButton } from '@Buttons';
 import VerticalLine from '@IconBar/VerticalLine';
-import { GENERAL_ICON_STYLE } from '@/constants/styles';
+import { GENERAL_ICON_STYLE } from '@constants/styles';
 
 type Direction = 'left' | 'right';
 
