@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
-import SectionButtons from '@components/Buttons/SectionButtons';
-import SlideMenu from '@components/SlideMenu/SlideMenu';
-import IconButton from '@components/Buttons/IconButton';
-import { iconStyle } from '@constants/styles';
+import { SectionButtons, IconButton } from '@Buttons';
+import SlideMenu from '@SlideMenu';
+import { GENERAL_ICON_STYLE } from '@constants/styles';
 
 const Header = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -33,7 +32,7 @@ const Header = () => {
           <SectionButtons wrapperStyle="inline-block" buttonStyle="px-4" />
         </div>
         <div className="sm:hidden">
-          <IconButton name="HamburgerIcon" size={36} style={iconStyle} />
+          <IconButton name="HamburgerIcon" size={36} style={GENERAL_ICON_STYLE} />
         </div>
         <SlideMenu />
       </div>

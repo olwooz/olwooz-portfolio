@@ -1,4 +1,4 @@
-import { IconNames } from '@components/Icons/types';
+import { IconNames } from '@Icons/types';
 import useLanguage from '@hooks/useLanguage';
 import { useStoreDarkMode, useStoreSlideMenu } from '@hooks/useStore';
 

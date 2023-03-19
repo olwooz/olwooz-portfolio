@@ -1,7 +1,7 @@
-import { IconNames } from '@components/Icons/types';
-import IconButton from '@components/Buttons/IconButton';
-import VerticalLine from '@components/IconBar/VerticalLine';
-import { iconStyle } from '@/constants/styles';
+import { IconNames } from '@Icons/types';
+import { IconButton } from '@Buttons';
+import VerticalLine from '@IconBar/VerticalLine';
+import { GENERAL_ICON_STYLE } from '@/constants/styles';
 
 type Direction = 'left' | 'right';
 
@@ -16,7 +16,7 @@ const IconBar = ({ direction, icons }: Props) => {
     <div className={`w-40px fixed bottom-0 hidden sm:block ${placement}`}>
       <div className="m-0 flex list-none flex-col items-center p-0">
         {icons.map((icon, i) => (
-          <IconButton key={i} name={icon} buttonStyle={'mb-2 px-4'} style={iconStyle} />
+          <IconButton key={i} name={icon} buttonStyle={'mb-2 px-4'} style={GENERAL_ICON_STYLE} />
         ))}
         <VerticalLine />
       </div>

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { AnimatePresence, motion, Variants } from 'framer-motion';
-import { ShuffleIcon } from '@components/Icons';
+import { ShuffleIcon } from '@Icons';
 
 interface Props {
   textData: string[];

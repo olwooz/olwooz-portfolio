@@ -1,10 +1,9 @@
 import { useEffect, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useStoreSlideMenu } from '@hooks/useStore';
-import IconGroup from '@components/SlideMenu/IconGroup';
-import SectionButtons from '@components/Buttons/SectionButtons';
-import IconButton from '@components/Buttons/IconButton';
-import { iconStyle } from '@/constants/styles';
+import IconGroup from '@SlideMenu/IconGroup';
+import { SectionButtons, IconButton } from '@Buttons';
+import { GENERAL_ICON_STYLE } from '@constants/styles';
 
 const SlideMenu = () => {
   const { isOpen, toggleOpen } = useStoreSlideMenu();
@@ -35,7 +34,7 @@ const SlideMenu = () => {
           ref={slideMenuRef}
         >
           <div className="absolute top-8 right-8">
-            <IconButton name="RightArrowIcon" size={36} style={iconStyle} />
+            <IconButton name="RightArrowIcon" size={36} style={GENERAL_ICON_STYLE} />
           </div>
           <SectionButtons wrapperStyle="block" buttonStyle="py-16 text-2xl" onClick={toggleOpen} />
           <IconGroup />

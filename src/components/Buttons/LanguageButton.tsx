@@ -4,7 +4,7 @@ interface Props {
   language: string;
 }
 
-export const LanguageButton = ({ language }: Props) => {
+const LanguageButton = ({ language }: Props) => {
   const { changeLocale } = useLanguage();
 
   return (
@@ -16,3 +16,5 @@ export const LanguageButton = ({ language }: Props) => {
     </span>
   );
 };
+
+export default LanguageButton;

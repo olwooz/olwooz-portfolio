@@ -1,4 +1,4 @@
-import { IconProps } from '@components/Icons/types';
+import { IconProps } from '@Icons/types';
 
 export const LightDarkIcon = ({ size, style }: IconProps) => {
   return (

@@ -2,13 +2,13 @@ import { useEffect } from 'react';
 import { GetStaticPropsContext } from 'next';
 import Head from 'next/head';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import About from '@About/About';
-import Contact from '@Contact/Contact';
-import Main from '@Main/Main';
-import Projects from '@Projects/Projects';
-import Header from '@components/Header/Header';
-import IconBar from '@components/IconBar/IconBar';
-import { IconNames } from '@components/Icons/types';
+import Contact from '@Contact';
+import About from '@About';
+import Main from '@Main';
+import Projects from '@Projects';
+import Header from '@Header';
+import IconBar from '@IconBar';
+import { IconNames } from '@Icons/types';
 import { useStoreSlideMenu, useStoreDarkMode } from '@hooks/useStore';
 
 export async function getStaticProps({ locale }: GetStaticPropsContext) {

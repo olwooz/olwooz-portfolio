@@ -1,4 +1,4 @@
-import { IconProps } from '@components/Icons/types';
+import { IconProps } from '@Icons/types';
 
 export const GitHubIcon = ({ size, style }: IconProps) => {
   return (

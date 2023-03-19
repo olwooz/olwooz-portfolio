@@ -1,6 +1,6 @@
 import { ComponentType } from 'react';
-import { Icons } from '@components/Icons';
-import { IconNames, IconProps } from '@components/Icons/types';
+import { Icons } from '@Icons';
+import { IconNames, IconProps } from '@Icons/types';
 import useButtonActions from '@hooks/useButtonActions';
 
 interface Props extends IconProps {
