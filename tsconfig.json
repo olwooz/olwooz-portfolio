@@ -36,7 +36,8 @@
       "@SlideMenu": ["./src/components/SlideMenu"],
       "@SlideMenu/*": ["./src/components/SlideMenu/*"],
       "@constants/*": ["./src/constants/*"],
-      "@hooks/*": ["./src/hooks/*"]
+      "@hooks/*": ["./src/hooks/*"],
+      "@utils/*": ["./src/utils/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
