@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { GetStaticPropsContext } from 'next';
 import Head from 'next/head';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -10,6 +10,7 @@ import Header from '@Header';
 import IconBar from '@IconBar';
 import { IconNames } from '@Icons/types';
 import { useStoreSlideMenu, useStoreDarkMode } from '@hooks/useStore';
+import { Loader } from '@/components/Loader/Loader';
 
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
   return {
@@ -26,6 +27,18 @@ export default function Home() {
   const leftIcons: IconNames[] = ['LanguageIcon', 'LightDarkIcon'];
   const rightIcons: IconNames[] = ['VelogIcon', 'GitHubIcon'];
 
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setIsVisible(false);
+    }, 5000);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, []);
+
   useEffect(() => {
     document.body.style.overflowY = isOpen ? 'hidden' : 'visible';
   }, [isOpen]);
@@ -39,6 +52,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={darkMode ? 'dark bg-slate-800' : 'bg-slate-200'}>
+        {isVisible && <Loader />}
         <Header />
         <Main />
         <About />
