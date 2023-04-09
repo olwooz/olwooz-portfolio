@@ -36,24 +36,28 @@ const SlotMachine = ({ textData }: Props) => {
       setCurrentIndex((prev) => {
         return prev < lastIndex ? prev + 1 : prev;
       });
-    }, getDuration(10, currentIndex));
+    }, getDuration(15, currentIndex));
 
     return () => clearInterval(interval);
   });
 
   const variants: Variants = {
-    initial: { scaleY: 0.3, y: '-50%', opacity: 0 },
+    initial: { scaleY: 0.2, y: '-50%', opacity: 0 },
     animate: ({ isLast }) => {
       let props: VariantProps = { scaleY: 1, y: 0, opacity: 1 };
       if (!isLast) props['filter'] = 'blur(1.5px)';
 
       return props;
     },
-    exit: { scaleY: 0.3, y: '50%', opacity: 0 },
+    exit: { scaleY: 0.2, y: '50%', opacity: 0 },
   };
 
   function handleClick() {
-    setData((prev) => [prev[lastIndex], ...prev.slice(0, lastIndex)]);
+    setData((prev) => {
+      const first = prev.shift();
+      prev.push(first);
+      return prev;
+    });
     setCurrentIndex(0);
   }
 
@@ -73,14 +77,14 @@ const SlotMachine = ({ textData }: Props) => {
           return (
             i === currentIndex && (
               <motion.p
-                className="cursor-pointer overflow-hidden font-thin sm:text-4xl lg:text-7xl"
+                className="cursor-pointer overflow-hidden pb-2 font-thin sm:text-4xl lg:text-7xl"
                 key={text}
                 custom={{ isLast }}
                 variants={variants}
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                transition={{ duration: getDuration(isLast ? 0.06 : 0.01, i), ease: isLast ? 'easeInOut' : 'linear' }}
+                transition={{ duration: getDuration(isLast ? 0.09 : 0.015, i), ease: isLast ? 'easeInOut' : 'linear' }}
                 onClick={handleClick}
                 whileHover={{ opacity: 0.5, transition: { duration: 0.2 } }}
                 whileTap={{ scaleY: 0.7, y: '-30%', transition: { duration: 0.2 } }}

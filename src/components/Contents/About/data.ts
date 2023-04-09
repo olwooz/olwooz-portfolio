@@ -1,4 +1,1 @@
-export const ABOUT_P = [
-  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nisi nemo eos? Quod reiciendis, commodi unde vel ducimus voluptatem? Dignissimos velit hic, in id placeat perferendis corporis distinctio sunt cum.',
-  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolore illum inventore repudiandae perferendis nesciunt, et, earum, quod alias corrupti reiciendis pariatur repellendus voluptates debitis modi dolor nobis ex soluta! Reiciendis eveniet ipsam veniam mollitia incidunt nisi consequuntur fugiat quis dicta quisquam. Nisi animi, ad quam alias voluptas perferendis blanditiis aut expedita repellendus voluptate doloremque in assumenda hic explicabo maiores corporis, fuga sapiente ratione magnam laboriosam non nulla error? Dolores, vero nesciunt esse soluta perspiciatis beatae rem neque officiis. Facilis veniam dolore blanditiis! Ducimus blanditiis officiis, nostrum soluta sequi maiores. Consequuntur perferendis hic alias ex nostrum dignissimos amet pariatur eligendi.'
-]
+export const NUM_ABOUT_SENTENCES = 3;

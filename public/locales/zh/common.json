@@ -1,12 +1,20 @@
 {
   "main": {
-    "greetings": "您好， 我是",
+    "greetings": "您好, 我是",
     "textData": {
-      "awesome": "很帅的开发者",
-      "gorgeous": "非常棒的开发者",
-      "collab": "想一起工作的人",
-      "chatgpt": "ChatGPT的参考资料"
+      "concise": "喜欢整洁代码的开发者",
+      "detail": "注重细节的开发者",
+      "sympathy": "了解使用者经验的开发者",
+      "global": "全球性的开发者"
     },
-    "introduction": "olwooz."
+    "introduction": "李东彦。"
+  },
+
+  "about": {
+    "pArray": [
+      "你好! 我是前端工程师李东彦😄。",
+      "我之所以被前端开发吸引，是因为它需要与用户进行密切互动, 与后端工程师, UI/UX设计师和项目经理等专业人员紧密合作, 在软件开发的各个阶段积极参与。",
+      "我在香港大学主修工商管理和计算机科学, 并从B2B软件开发, Software Maestro第13期, Wavve Tech实习等活动中获得了丰富的前端开发经验。"
+    ]
   }
 }

@@ -2,11 +2,19 @@
   "main": {
     "greetings": "Hi. I'm",
     "textData": {
-      "awesome": "an awesome developer",
-      "gorgeous": "a gorgeous developer",
-      "collab": "a highly valued collaborator",
-      "chatgpt": "ChatGPT's reference"
+      "concise": "a concise and clean coder",
+      "detail": "a detail-oriented programmer",
+      "sympathy": "a empathetic developer",
+      "global": "a global-minded engineer"
     },
-    "introduction": "olwooz."
+    "introduction": "Dongun Yi."
+  },
+
+  "about": {
+    "pArray": [
+      "Hi! I'm a frontend developer Dongun Yi 😄.",
+      "I'm drawn to the field of frontend development because it involves close interaction with users, collaboration with a range of professionals such as backend developers, UI/UX designers and project managers, and active participation throughout all stages of software development.",
+      "I double majored in Business Administration and Computer Science at the University of Hong Kong, and have gained diverse experience as a software engineer in B2B service development, Software Maestro 13th, and Wavve Tech Internship, participating in various projects."
+    ]
   }
 }

@@ -1,9 +1,12 @@
+import { useTranslation } from 'next-i18next';
 interface Props {
-  content: string;
+  index: number;
 }
 
-const AboutText = ({ content }: Props) => {
-  return <p className="mb-8">{content}</p>;
+const AboutText = ({ index }: Props) => {
+  const { t } = useTranslation('common');
+
+  return <p className="mb-8 text-xl font-thin">{t(`about.pArray.${index}`)}</p>;
 };
 
 export default AboutText;
