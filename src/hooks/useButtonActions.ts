@@ -21,12 +21,12 @@ const useButtonActions = (): ButtonActions => {
   }
 
   const buttonActions: ButtonActions = {
-    GitHubIcon: () => openLink('https://github.com'),
+    GitHubIcon: () => openLink('https://github.com/olwooz'),
     HamburgerIcon: toggleOpen,
     LanguageIcon: changeToNextLanguage,
     LightDarkIcon: toggleDarkMode,
     RightArrowIcon: toggleOpen,
-    VelogIcon: () => openLink('https://velog.io'),
+    VelogIcon: () => openLink('https://velog.io/@olwooz'),
   };
 
   return buttonActions;

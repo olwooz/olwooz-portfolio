@@ -27,7 +27,7 @@ const Header = () => {
           show ? '' : 'transparent'
         }`}
       >
-        <div>LOGO</div>
+        <div className=" h-[30px] w-[100px]"></div>
         <div className="hidden sm:block">
           <SectionButtons wrapperStyle="inline-block" buttonStyle="px-4" />
         </div>

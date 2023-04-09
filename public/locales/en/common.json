@@ -16,5 +16,11 @@
       "I'm drawn to the field of frontend development because it involves close interaction with users, collaboration with a range of professionals such as backend developers, UI/UX designers and project managers, and active participation throughout all stages of software development.",
       "I double majored in Business Administration and Computer Science at the University of Hong Kong, and have gained diverse experience as a software engineer in B2B service development, Software Maestro 13th, and Wavve Tech Internship, participating in various projects."
     ]
+  },
+
+  "projects": {
+    "1": "A web app that creates a snowman to represent a friend's personality type and delivers it with along with messages",
+    "2": "A software that provides various collaborative features such as a whiteboard and an interactive video player",
+    "3": "An all-in-one management software for food waste collection and transportation companies"
   }
 }

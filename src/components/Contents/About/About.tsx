@@ -10,7 +10,7 @@ const About = () => {
       <div className="2xl:ml-[100px] 2xl:mr-[100px]">
         <h1 className="mb-8 text-5xl font-light">About</h1>
         <div className={`relative mx-auto mb-8 2xl:mr-[100px] 2xl:hidden ${ABOUT_IMG_HEIGHT} ${ABOUT_IMG_WIDTH}`}>
-          <Image src="/images/profile.webp" alt="profile" fill />
+          <Image src="/images/profile.webp" alt="profile" fill sizes="(max-width: 432px) 432px" className="object-contain" />
         </div>
         {Array(NUM_ABOUT_SENTENCES)
           .fill(0)
@@ -19,7 +19,7 @@ const About = () => {
           ))}
       </div>
       <div className={`relative mx-auto hidden 2xl:mr-[100px] 2xl:block ${ABOUT_IMG_HEIGHT} ${ABOUT_IMG_WIDTH}`}>
-        <Image src="/images/profile.webp" alt="profile" fill />
+        <Image src="/images/profile.webp" alt="profile" fill sizes="(max-width: 432px) 432px" className="object-contain" />
       </div>
     </ContentWrapper>
   );

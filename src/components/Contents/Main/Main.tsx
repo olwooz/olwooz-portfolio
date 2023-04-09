@@ -9,7 +9,7 @@ const Main = () => {
   return (
     <ContentWrapper id="main" style="flex items-center">
       <div id="mobile" className="w-full sm:hidden">
-        <h1 className="mb-6 text-base font-light">{t('main.greetings')}</h1>
+        <h1 className="mb-6 text-base font-extralight">{t('main.greetings')}</h1>
         {textKeys.map((text) => (
           <h1 key={text} className="text-2xl font-thin">
             {t(`main.textData.${text}`)}

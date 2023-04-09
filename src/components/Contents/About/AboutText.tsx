@@ -6,7 +6,7 @@ interface Props {
 const AboutText = ({ index }: Props) => {
   const { t } = useTranslation('common');
 
-  return <p className="mb-8 text-xl font-thin">{t(`about.pArray.${index}`)}</p>;
+  return <p className="mb-8 text-xl font-extralight">{t(`about.pArray.${index}`)}</p>;
 };
 
 export default AboutText;

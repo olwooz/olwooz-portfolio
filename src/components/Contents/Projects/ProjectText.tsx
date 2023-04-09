@@ -1,3 +1,4 @@
+import { useTranslation } from 'next-i18next';
 import { Project } from '@Projects/types';
 
 interface Props {
@@ -7,11 +8,12 @@ interface Props {
 
 const ProjectText = (props: Props) => {
   const { projects, activeIndex } = props;
+  const { t } = useTranslation('common');
 
   return (
     <>
-      <p className="mb-8 text-3xl font-extrabold">{projects[activeIndex].title}</p>
-      <p className="font-base mb-8">{projects[activeIndex].description}</p>
+      <p className="mb-8 text-3xl font-extralight">{projects[activeIndex].title}</p>
+      <p className="mb-8 text-xl font-extralight">{t(`projects.${projects[activeIndex].id}`)}</p>
     </>
   );
 };

@@ -3,34 +3,19 @@ import { Project } from '@Projects/types';
 export const projectData: Project[] = [
   {
     id: 1,
-    title: 'Project 1',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nisi nemo eos? Quod reiciendis, commodi unde vel ducimus voluptatem? Dignissimos velit hic, in id placeat perferendis corporis distinctio cum.',
-    previewImage: '/images/preview_asyncrum.png',
-    url: 'https://github.com',
+    title: 'Snowman Village',
+    previewImage: '/images/preview_snowtown.webp',
+    url: 'https://github.com/snowballers/snowball-frontend',
   },
   {
     id: 2,
-    title: 'Project 2',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nisi nemo eos? Quod reiciendis, commodi unde vel ducimus voluptatem? Dignissimos velit hic, in id placeat perferendis corporis distinctio cum.',
-    previewImage: '/images/preview_asyncrum.png',
-    url: 'https://github.com',
+    title: 'Asyncrum',
+    previewImage: '/images/preview_asyncrum.webp',
+    url: 'https://github.com/Whiteboard-Journey/asyncrum-frontend',
   },
   {
     id: 3,
-    title: 'Project 3',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nisi nemo eos? Quod reiciendis, commodi unde vel ducimus voluptatem? Dignissimos velit hic, in id placeat perferendis corporis distinctio cum.',
-    previewImage: '/images/preview_asyncrum.png',
-    url: 'https://github.com',
-  },
-  {
-    id: 4,
-    title: 'Project 4',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nisi nemo eos? Quod reiciendis, commodi unde vel ducimus voluptatem? Dignissimos velit hic, in id placeat perferendis corporis distinctio cum.',
-    previewImage: '/images/preview_asyncrum.png',
-    url: 'https://github.com',
+    title: 'Clean21 FW',
+    previewImage: '/images/preview_clean21fw.webp',
   },
 ];

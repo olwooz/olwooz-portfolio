@@ -16,7 +16,7 @@ const ContactInfo = ({ info, name, link }: Props) => {
   const InfoElem = (
     <>
       <Icon style={CONTACT_ICON_STYLE} />
-      <span className="ml-4 align-middle text-lg font-bold">{info}</span>
+      <span className="ml-4 align-middle text-xl font-light">{info}</span>
     </>
   );
 

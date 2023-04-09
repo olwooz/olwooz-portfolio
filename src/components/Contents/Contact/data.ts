@@ -1,4 +1,3 @@
-const EMAIL = 'email@email.com';
-const PHONE = '010-1234-1234';
+const EMAIL = 'ydu0919@gmail.com';
 
-export {EMAIL, PHONE}
+export {EMAIL}
