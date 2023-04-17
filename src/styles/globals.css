@@ -91,11 +91,33 @@ html {
 }
 
 .swiper-button-prev {
-  /* color: #cbd5e1 !important; */
   transform: translateX(-100px);
 }
 
 .swiper-button-next {
-  /* color: #cbd5e1 !important; */
   transform: translateX(100px);
+}
+
+.slotMachineText {
+  font-size: xx-large;
+  font-weight: 100;
+
+  caret-color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .slotMachineText {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slotMachineText {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
 }

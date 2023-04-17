@@ -42,14 +42,14 @@ const SlotMachine = ({ textData }: Props) => {
   });
 
   const variants: Variants = {
-    initial: { scaleY: 0.2, y: '-50%', opacity: 0 },
+    initial: { scaleY: 0.3, y: '-50%', opacity: 0 },
     animate: ({ isLast }) => {
       let props: VariantProps = { scaleY: 1, y: 0, opacity: 1 };
       if (!isLast) props['filter'] = 'blur(1.5px)';
 
       return props;
     },
-    exit: { scaleY: 0.2, y: '50%', opacity: 0 },
+    exit: { scaleY: 0.3, y: '50%', opacity: 0 },
   };
 
   function handleClick() {
@@ -63,7 +63,7 @@ const SlotMachine = ({ textData }: Props) => {
 
   const getDuration = useCallback(
     (base: number, index: number) => {
-      return base * (index + 1) * (MIN_ARR_LEN / dataCount);
+      return base * (((index + 1) / MIN_ARR_LEN) * 10) * (MIN_ARR_LEN / dataCount);
     },
     [dataCount],
   );
