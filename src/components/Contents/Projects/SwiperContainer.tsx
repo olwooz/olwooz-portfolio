@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { EffectCards, Navigation } from 'swiper';
 import { Project } from '@Projects/types';
-import SlideProjectCard from './ProjectCard';
+import ProjectCard from './ProjectCard';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -29,7 +29,7 @@ const SwiperContainer = (props: Props) => {
     >
       {projects.map((project) => (
         <SwiperSlide key={project.id}>
-          <SlideProjectCard project={project}></SlideProjectCard>
+          <ProjectCard project={project}></ProjectCard>
         </SwiperSlide>
       ))}
     </Swiper>
