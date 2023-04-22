@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 const Main = () => {
   const { t, i18n, ready } = useTranslation('common');
-  const [language, setLanguage] = useState(i18n.language);
+  const [language, setLanguage] = useState<string | null>(null);
   const textDataArray = Object.values(t('main.textData', { returnObjects: true })) as string[];
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const Main = () => {
 
       <div className="hidden w-full sm:block">
         <h1 className="mb-6 text-2xl font-light">{t('main.greetings')}</h1>
-        <SlotMachine textData={textDataArray} key={language}></SlotMachine>
+        {language && <SlotMachine textData={textDataArray} key={language}></SlotMachine>}
         <h1 className="mt-4 text-4xl font-bold">{t('main.introduction')}</h1>
       </div>
     </ContentWrapper>
