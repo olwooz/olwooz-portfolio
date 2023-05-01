@@ -20,7 +20,7 @@ const Projects = () => {
       <ContentWrapper id="projects" style="hidden 2xl:flex 2xl:justify-between">
         <SwiperContainer projects={projectData} setActiveIndex={setActiveIndex} />
 
-        <div className="mr-[100px] max-w-[300px] text-right">
+        <div className="mr-[100px] w-[300px] text-right">
           <h1 className="mb-16 text-5xl font-light">Projects</h1>
           <ProjectText projects={projectData} activeIndex={activeIndex} />
         </div>
