@@ -19,8 +19,9 @@
   },
 
   "projects": {
-    "1": "A web app that creates a snowman to represent a friend's personality type and delivers it with along with messages",
-    "2": "A software that provides various collaborative features such as a whiteboard and an interactive video player",
-    "3": "An all-in-one management software for food waste collection and transportation companies"
+    "1": "This portfolio web page\nthat you're looking at right now :)",
+    "2": "A web app that creates a snowman to represent a friend's personality type and delivers it with along with messages",
+    "3": "A software that provides various collaborative features such as a whiteboard and an interactive video player",
+    "4": "An all-in-one management software for food waste collection and transportation companies"
   }
 }

@@ -13,7 +13,7 @@ const ProjectText = (props: Props) => {
   return (
     <>
       <p className="mb-8 text-3xl font-extralight">{projects[activeIndex].title}</p>
-      <p className="mb-8 text-xl font-extralight">{t(`projects.${projects[activeIndex].id}`)}</p>
+      <p className="mb-8 text-xl font-extralight 2xl:whitespace-pre-line">{t(`projects.${projects[activeIndex].id}`)}</p>
     </>
   );
 };

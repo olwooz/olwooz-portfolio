@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { Project } from '@Projects/types';
+import { useStoreDarkMode } from '@/hooks/useStore';
 
 interface Props {
   project: Project;
@@ -8,12 +9,15 @@ interface Props {
 
 const ProjectCard = (props: Props) => {
   const { project } = props;
-  const { title, previewImage, github, notion } = project;
+  const { darkMode } = useStoreDarkMode();
+  const { title, previewImage, previewImageDarkMode, github, notion } = project;
 
   const router = useRouter();
 
+  const projectImageSrc = darkMode ? previewImageDarkMode ?? previewImage : previewImage;
+
   const ProjectImage = () => {
-    return <Image className="object-cover" src={previewImage} alt={title} width={640} height={360} />;
+    return <Image className="object-cover" src={projectImageSrc} alt={title} width={640} height={360} />;
   };
 
   const ProjectImageWithLink = ({ link }: { link: string }) => {
