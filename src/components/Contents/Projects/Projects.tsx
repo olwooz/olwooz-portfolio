@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import ContentWrapper from '@components/Contents/ContentWrapper';
 import ProjectText from '@Projects/ProjectText';
@@ -6,6 +7,7 @@ import { projectData } from '@Projects/data';
 import SwiperContainer from './SwiperContainer';
 
 const Projects = () => {
+  const router = useRouter();
   const { t } = useTranslation('common');
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -16,7 +18,7 @@ const Projects = () => {
           <h1 className="mb-16 text-5xl font-light">Projects</h1>
           <SwiperContainer projects={projectData} setActiveIndex={setActiveIndex} />
           <ProjectText projects={projectData} activeIndex={activeIndex} />
-          <span>{t('projects.click')}</span>
+          {router.locale === 'ko' || (projectData[activeIndex].github && <span>{t('projects.click')}</span>)}
         </div>
       </ContentWrapper>
 
@@ -26,7 +28,7 @@ const Projects = () => {
         <div className="mr-[100px] w-[300px] text-right">
           <h1 className="mb-16 text-5xl font-light">Projects</h1>
           <ProjectText projects={projectData} activeIndex={activeIndex} />
-          <span>{t('projects.click')}</span>
+          {router.locale === 'ko' || (projectData[activeIndex].github && <span>{t('projects.click')}</span>)}
         </div>
       </ContentWrapper>
     </div>
