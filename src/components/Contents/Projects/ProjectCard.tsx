@@ -10,7 +10,7 @@ interface Props {
 const ProjectCard = (props: Props) => {
   const { project } = props;
   const { darkMode } = useStoreDarkMode();
-  const { title, previewImage, previewImageDarkMode, github, notion } = project;
+  const { title, previewImage, previewImageDarkMode, github, link } = project;
 
   const router = useRouter();
 
@@ -31,7 +31,7 @@ const ProjectCard = (props: Props) => {
   if (router.locale !== 'ko') {
     return github ? <ProjectImageWithLink link={github} /> : <ProjectImage />;
   } else {
-    return notion ? <ProjectImageWithLink link={notion} /> : <ProjectImage />;
+    return link ? <ProjectImageWithLink link={link} /> : <ProjectImage />;
   }
 };
 

@@ -19,11 +19,11 @@
   },
 
   "projects": {
-    "1": "Participated in Wavve (Korean OTT Streaming Platform) Tech Internship and became a full-time frontend engineer",
-    "2": "This portfolio web page\nthat you're looking at right now :)",
-    "3": "A web app that creates a snowman to represent a friend's personality type and delivers it with along with messages",
-    "4": "A software that provides various collaborative features such as a whiteboard and an interactive video player",
-    "5": "An all-in-one management software for food waste collection and transportation companies",
+    "1": "A no-code app builder based on shadcn/ui components",
+    "2": "Participated in Wavve (Korean OTT Streaming Platform) Tech Internship and became a full-time frontend engineer",
+    "3": "This portfolio web page\nthat you're looking at right now :)",
+    "4": "A web app that creates a snowman to represent a friend's personality type and delivers it with along with messages",
+    "5": "A software that provides various collaborative features such as a whiteboard and an interactive video player",
     "click": "Click the picture to see the detail."
   }
 }

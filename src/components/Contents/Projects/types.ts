@@ -4,5 +4,5 @@ export interface Project {
   previewImage: string;
   previewImageDarkMode?: string;
   github?: string;
-  notion?: string;
+  link?: string;
 }
